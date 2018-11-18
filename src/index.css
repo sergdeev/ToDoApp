@@ -1,14 +1,71 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 10% 0px 0px 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eaeaea;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.completed{
+    cursor: pointer;
+    text-decoration: line-through;
+    font-style: italic;
+    color: lightgrey;
+}
+
+.non-completed{
+    cursor: pointer;
+}
+
+.app{
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.18);
+}
+.input {
+    min-width: 400px;
+    border: 0;
+}
+
+.todo-list{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btn{
+    cursor: pointer;
+    color: grey;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.active{
+    cursor: pointer;
+    color: grey;
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
